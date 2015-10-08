@@ -1,0 +1,32 @@
+{
+  "name": "dafik/testlib-skeleton",
+  "description": "skeleton for integration test wit unittest and pnantomjs",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "behat/mink": "1.7.x-dev",
+    "jcalderonzumba/mink-phantomjs-driver": "0.4.x-dev",
+    "jakoch/phantomjs-installer": "1.9.8",
+    "phpunit/phpunit": "^5.0",
+    "dafik/testlib": "dev-master"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "PhantomInstaller\\Installer::installPhantomJS",
+      "TestLib\\Installer::install"
+    ],
+    "post-update-cmd": [
+      "PhantomInstaller\\Installer::installPhantomJS",
+      "TestLib\\Installer::install"
+    ]
+  }
+}
