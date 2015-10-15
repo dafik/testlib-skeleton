@@ -22,6 +22,7 @@
   "autoload": {
     "psr-4": {
       "lib\\": "lib/"
+    }
   },
   "scripts": {
     "post-install-cmd": [
