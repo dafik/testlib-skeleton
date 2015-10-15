@@ -19,6 +19,10 @@
   "config": {
     "bin-dir": "bin"
   },
+  "autoload": {
+    "psr-4": {
+      "lib\\": "lib/"
+  },
   "scripts": {
     "post-install-cmd": [
       "PhantomInstaller\\Installer::installPhantomJS",
